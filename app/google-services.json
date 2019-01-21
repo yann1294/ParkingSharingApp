@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "349504507711",
+    "firebase_url": "https://parkingsharingapp-2d202.firebaseio.com",
+    "project_id": "parkingsharingapp-2d202",
+    "storage_bucket": "parkingsharingapp-2d202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349504507711:android:a88453d0e85b1175",
+        "android_client_info": {
+          "package_name": "com.example.a6god_tha_godfather_.parkingsharingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349504507711-moed9pup7sh3ml6fvr9n7l6dqrkkd584.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a6god_tha_godfather_.parkingsharingapp",
+            "certificate_hash": "76bc9a917a3b139d646761b752b7a14f3ddd6ee8"
+          }
+        },
+        {
+          "client_id": "349504507711-h3q6nkt1k0iavsaskboceio4kbri0gjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzU-wZZpMateekNd4n5vujGjxBQHIb0PY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349504507711-h3q6nkt1k0iavsaskboceio4kbri0gjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

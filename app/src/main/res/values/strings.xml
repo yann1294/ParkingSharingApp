@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ParkingSharingApp</string>
+    <string name="textView_name">Hello World!</string>
+    <string name="mail">Enter mail</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_as_user">Sign up as user</string>
+    <string name="sign_up_as_owner">Sign up as Owner</string>
+    <string name="sign_up_client">Sign Up</string>
+    <string name="car_model_client">Car Model</string>
+    <string name="enter_mail_client">Enter mail</string>
+    <string name="enter_name_client">Enter name</string>
+    <string name="sign_up_btn_owner">SIGN UP</string>
+    <string name="password_owner">Password</string>
+    <string name="parking_registration">Parking registration</string>
+    <string name="enter_mail_owner">Enter mail</string>
+    <string name="enter_name_owner">Enter Name</string>
+    <string name="client_password">Password</string>
+</resources>
