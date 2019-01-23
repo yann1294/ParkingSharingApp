@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 
 class OwnerActivity extends AppCompatActivity {
 
+    //Hello there
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
