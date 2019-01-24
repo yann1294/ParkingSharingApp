@@ -1,5 +1,6 @@
 package com.example.a6god_tha_godfather_.parkingsharingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -19,6 +20,7 @@ class ClientActivity extends AppCompatActivity {
    private EditText getClientCarModel;
    private EditText getClientPassword ;
    private Button signUp ;
+   private Button goToLogin ;
 
    DatabaseReference databaseClients;
 
@@ -36,6 +38,7 @@ class ClientActivity extends AppCompatActivity {
         getClientCarModel = (EditText) findViewById(R.id.edit_car_model) ;
         getClientPassword = (EditText) findViewById(R.id.edit_pwd_client) ;
         signUp = (Button)  findViewById(R.id.btn_sUp_client) ;
+
 
             signUp.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -69,5 +72,11 @@ class ClientActivity extends AppCompatActivity {
             }else {
                 Toast.makeText(this,"You should fill the fields",Toast.LENGTH_LONG).show();
             }
+    }
+
+
+    public void goToLogin(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
