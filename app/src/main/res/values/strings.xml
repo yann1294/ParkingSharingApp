@@ -12,4 +12,40 @@
     <string name="name">Fullname</string>
     <string name="sign_up_as_owner">Sign up as owner</string>
     <string name="sign_up_as_client">Sign up as client</string>
+    <string name="title_activity_owner_interface">OwnerInterface</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_client_interface">ClientInterfaceActivity</string>
+
+    <!-- Client Interface Strings  -->
+
+
+    <string name="parkingSA">PARKING SHARING APPLICATION</string>
+    <string name="command_client">DOOR COMMANDS</string>
+    <string name="payment_client">PAYMENT</string>
+    <string name="profile_client">PROFILE</string>
+    <string name="open_door_client">OPEN</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string-array name="Planets">
+        <item>41, Avenue Clemenceau</item>
+        <item>34, Avenue Citronnier </item>
+        <item>343, Avenue Orangier</item>
+        <item>54, Avenue Tablier</item>
+        <item>64, Avenue De la Roche</item>
+        <item>74, Avenue Blaise Pascal</item>
+        <item>84, Avenue Macron</item>
+        <item>412, Avenue Chirac</item>
+        <item>344, Avenue Olivier</item>
+        <item>345, Avenue Maron</item>
+        <item>348, Avenue Montaigne</item><item>34, Avenue ISKJ</item>
+        <item>340, Avenue Simonin</item>
+        <item>245, Avenue Hector</item>
+        <item>343, Avenue Gonzalez</item>
+
+    </string-array>
+
+
 </resources>

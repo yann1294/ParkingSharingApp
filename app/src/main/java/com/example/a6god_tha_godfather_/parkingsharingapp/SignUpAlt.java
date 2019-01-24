@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-class SignUpAlt extends AppCompatActivity {
+ public  class SignUpAlt extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +18,7 @@ class SignUpAlt extends AppCompatActivity {
     }
 
     public void ownerSignUp(View view) {
-        Intent intent = new Intent(this,OwnerActivity.class);
+        Intent intent = new Intent(this, OwnerActivity.class);
         startActivity(intent);
     }
 }

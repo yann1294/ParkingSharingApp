@@ -9,11 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.a6god_tha_godfather_.parkingsharingapp.clientActivities.ClientInterfaceActivity;
 import com.example.a6god_tha_godfather_.parkingsharingapp.model.Client;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-class ClientActivity extends AppCompatActivity {
+public class ClientActivity extends AppCompatActivity {
 
    private EditText getClientName;
    private EditText getClientMail;
@@ -67,7 +68,10 @@ class ClientActivity extends AppCompatActivity {
                 databaseClients.child("carModel").setValue(carModel);
                 databaseClients.child("passwd").setValue(passwd);
 
-                Toast.makeText(this, "Client added", Toast.LENGTH_LONG).show();
+
+
+                // Toast.makeText(this, "Client added", Toast.LENGTH_LONG).show();
+                goToMainClientInterface();
 
             }else {
                 Toast.makeText(this,"You should fill the fields",Toast.LENGTH_LONG).show();
@@ -77,6 +81,13 @@ class ClientActivity extends AppCompatActivity {
 
     public void goToLogin(View view) {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+
+
+    public void goToMainClientInterface() {
+        Intent intent = new Intent(this, ClientInterfaceActivity.class);
         startActivity(intent);
     }
 }

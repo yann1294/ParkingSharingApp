@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/owner_profile"
+            android:icon="@mipmap/ic_launcher"
+            android:title="PROFILE" />
+        <item
+            android:id="@+id/owner_commands"
+            android:icon="@mipmap/ic_launcher"
+            android:title="COMMANDS" />
+        <item
+            android:id="@+id/owner_add_pk"
+            android:icon="@mipmap/ic_launcher"
+            android:title="ADD PARKING" />
+        <item
+            android:id="@+id/owner_availability"
+            android:icon="@mipmap/ic_launcher"
+            android:title="AVAILABILITY" />
+    </group>
+
+
+
+</menu>
