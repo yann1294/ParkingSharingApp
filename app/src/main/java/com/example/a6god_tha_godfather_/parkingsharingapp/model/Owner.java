@@ -5,17 +5,15 @@ public class Owner {
     String ownerId;
     String ownerName;
     String ownerMail;
-    String ownerParkingReg;
     String ownerPwd;
 
     public Owner() {
     }
 
-    public Owner(String ownerId, String ownerName, String ownerMail, String ownerParkingReg, String ownerPwd) {
+    public Owner(String ownerId, String ownerName, String ownerMail, String ownerPwd) {
         this.ownerId = ownerId;
         this.ownerName = ownerName;
         this.ownerMail = ownerMail;
-        this.ownerParkingReg = ownerParkingReg;
         this.ownerPwd = ownerPwd;
     }
 
@@ -43,13 +41,6 @@ public class Owner {
         this.ownerMail = ownerMail;
     }
 
-    public String getOwnerParkingReg() {
-        return ownerParkingReg;
-    }
-
-    public void setOwnerParkingReg(String ownerParkingReg) {
-        this.ownerParkingReg = ownerParkingReg;
-    }
 
     public String getOwnerPwd() {
         return ownerPwd;

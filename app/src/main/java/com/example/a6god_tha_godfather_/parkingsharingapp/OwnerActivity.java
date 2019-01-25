@@ -14,13 +14,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 class OwnerActivity extends AppCompatActivity {
 
-        private EditText getOwnerName;
-        private EditText getOwnerMail;
-        private EditText getParkingRegistraion;
-        private EditText getOWnerPassword;
-        private Button   signUp;
+    private EditText getOwnerName;
+    private EditText getOwnerMail;
+    private EditText getOWnerPassword;
+    private Button signUp;
 
-        DatabaseReference databaseOwners;
+    DatabaseReference databaseOwners;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +28,10 @@ class OwnerActivity extends AppCompatActivity {
 
         databaseOwners = FirebaseDatabase.getInstance().getReference("owners");
 
-        getOwnerName = (EditText) findViewById(R.id.edit_name_owner);
-        getOwnerMail = (EditText) findViewById(R.id.edit_mail_owner);
-        getParkingRegistraion = (EditText) findViewById(R.id.edit_garage_rg);
-        getOWnerPassword = (EditText) findViewById(R.id.edit_pwd_owner);
-        signUp = (Button)  findViewById(R.id.button);
+        getOwnerName = (EditText) findViewById(R.id.name);
+        getOwnerMail = (EditText) findViewById(R.id.email);
+        getOWnerPassword = (EditText) findViewById(R.id.password);
+        signUp = (Button) findViewById(R.id.btnRegister);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,29 +41,27 @@ class OwnerActivity extends AppCompatActivity {
         });
     }
 
-    public void ownerSigningUp(){
+    public void ownerSigningUp() {
 
-        String name =  getOwnerName.getText().toString().trim();
+        String name = getOwnerName.getText().toString().trim();
         String mail = getOwnerMail.getText().toString().trim();
-        String parkingReg = getParkingRegistraion.getText().toString().trim();
         String passwd = getOWnerPassword.getText().toString().trim();
 
-            if (!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(mail)&&!TextUtils.isEmpty(parkingReg)&&!TextUtils.isEmpty(passwd)){
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(mail) && !TextUtils.isEmpty(passwd)) {
 
-                String id = databaseOwners.push().getKey();
+            String id = databaseOwners.push().getKey();
 
-                Owner owner = new Owner(id,name,mail,parkingReg,passwd);
+            Owner owner = new Owner(id, name, mail, passwd);
 
-                    databaseOwners.child(id).setValue(owner);
-                    databaseOwners.child("name").setValue(name);
-                    databaseOwners.child("mail").setValue(mail);
-                    databaseOwners.child("parkingReg").setValue(parkingReg);
-                    databaseOwners.child("password").setValue(passwd);
+            databaseOwners.child(id).setValue(owner);
+            databaseOwners.child("name").setValue(name);
+            databaseOwners.child("mail").setValue(mail);
+            databaseOwners.child("password").setValue(passwd);
 
-                Toast.makeText(this, "Owner added", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Owner added", Toast.LENGTH_LONG).show();
 
-            }else{
-                Toast.makeText(this,"You should fill the fields",Toast.LENGTH_LONG).show();
-            }
+        } else {
+            Toast.makeText(this, "You should fill the fields", Toast.LENGTH_LONG).show();
+        }
     }
 }
